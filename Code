@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int main(){
+    int n=1,j=0;
+    int array[10]={5,88,300,32,98,0,-78,-630,9,38};
+    int find_element;
+    cin>>find_element;
+    int i=0;
+    while(i<sizeof(array)){
+        if(array[i]==find_element){
+            cout<<"Found at index "<<i;
+            return 0;
+        }
+        i++;
+    }
+    cout<<"not found!";
+}
